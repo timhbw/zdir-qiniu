@@ -211,7 +211,8 @@
 						    	$suffix = explode(".",$showdir);
 						    	$suffix = end($suffix);
 						    	
-							    $url = '.'.$dir.'/'.$showdir;
+								// $url = '.'.$dir.'/'.$showdir;
+								$url = $qncdnurl.$dir.'/'.$showdir;
 
 							    //根据不同后缀显示不同图标
 							    $ico = $zdir->ico($suffix);

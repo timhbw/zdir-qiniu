@@ -20,14 +20,17 @@ pageurl = protocol + '//' + host + '/';
 
 //复制按钮
 function copy(url){
-	url = url.replace("./","");
+	// url = url.replace("./","");
 	//重组url
-	protocol = window.location.protocol;		//获取协议
-	host = window.location.host;				//获取主机
+	// protocol = window.location.protocol;		//获取协议
+	// host = window.location.host;				//获取主机
 	dir = window.location.pathname;				//获取目录
 	dir = dir.replace("index.php","");
 	
-	url = protocol + '//' + host + dir + url;
+	// url = protocol + '//' + host + dir + url;
+	url =  dir + url;
+	url =  url.replace('/','');
+
 
 	//console.log(url);
 

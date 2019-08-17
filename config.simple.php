@@ -31,4 +31,6 @@
 		"password"	=>	"xiaoz.me",
 		"auth"		=>	FALSE
 	);	
+	//设置七牛云加速域名，域名接入文档：https://developer.qiniu.com/fusion/manual/4939/the-domain-name-to-access
+	$qncdnurl = "http(s)://xxx.xxx.com";
 ?>
