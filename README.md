@@ -1,47 +1,21 @@
-# zdir
-使用PHP开发的目录列表程序
+###详细使用说明可以查看原作者仓库[文档](https://github.com/helloxz/zdir)
 
-![](https://imgurl.org/upload/1806/349f3b54028d58d6.png)
+###效果展示
 
-### 使用方法
-* 下载源码放到站点根目录
-* 将`config.simple.php`修改为`config.php`
-* 修改`config.php`设置自己的网站标题/关键词/描述
-* 如果需要排除某个目录，再次修改`config.php` ，里面有说明
-* 更多说明请查看帮助文档：[https://doc.xiaoz.me/#/zdir/](https://doc.xiaoz.me/#/zdir/)
+* 网站截图![zdir-qiniu](https://app.dlcdn.timhbw.com/zdir-qiniu-001.png)
+* 七牛后台截图![zdir-qiniu](https://app.dlcdn.timhbw.com/zdir-qiniu-002.png)
 
-### 主要功能
-- [x] 目录浏览
-- [x] MarkDown文件预览
-- [x] CSS/JavaScript一键复制
-- [x] 文件hash
-- [x] 图片预览
-- [x] 视频播放（仅支持mp4格式）
-- [x] 文本查看器（支持的格式有.txt .sh .py .go .c .cpp）
-- [x] Office在线预览（支持.doc .docx .xls .xlsx .ppt .pptx）
-- [x] 文件索引
-- [x] 二维码生成
-- [x] 文件删除
-- [x] 文件搜索
-- [ ] 文件上传
-- [ ] 密码验证
+###我修改的地方
+* 前端页面点击文件名后的下载链接是七牛云kodo（对象存储）的外链地址；
+* 文件名右侧的下载按钮，下载链接是七牛云kodo（对象存储）的外链地址。
 
+###优点
+* 降低服务器负载。即使使用1核1G1M 配置的服务器，当用户下载资源时，服务器也不会告警，因为下载全部走七牛云服务，您自己的服务器只提供前端页面。
+* 提升用户下载体验。之前如果您的服务器带宽为 1 M，那么用户本地的下载速度最高也就只有 100kb 左右了，但使用七牛云存储后，结合七牛云的融合 CDN，用户下载速度得到大幅提升！
 
-* 详细说明请访问： [Zdir 实用的目录列表程序](https://www.xiaoz.me/archives/10465)
+###使用文档
+[前往我的博客查看 - 等后续补上，先占位](https://timhbw.com/xx.html)
 
-### 注意事项
-* ~~不要使用中文命名目录/文件，否则可能发生不可预料的错误。~~
-* 2018.08.30 已解决中文命名问题（仅在Linux下做过测试）
-
-### Demo
-* [http://soft.xiaoz.org/](http://soft.xiaoz.org/)
-
-### 获取捐赠版
-扫描下方二维码，并留言您的网址可获取捐赠版，捐赠版可去除底部版权。
-
-![](https://imgurl.org/upload/1712/cb349aa4a1b95997.png)
-
-### 联系我
-* Blog：[https://www.xiaoz.me/](https://www.xiaoz.me/)
-* QQ:337003006
-* 社区支持：[https://ttt.sh/](https://ttt.sh/category/15/)
+###注册七牛
+* [注册链接-含aff](https://portal.qiniu.com/signup?code=1hfwbbz516dzm)
+* [注册链接-不含aff](https://portal.qiniu.com/signup)
